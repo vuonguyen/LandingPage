@@ -5,6 +5,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Shaping brands. Connecting audiences. By thinking louder. Seeing bigger. Being bolder. Killing the silence.">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
         <title>Holding page</title>
         <link rel="stylesheet" href="/assets/css/style.css" />
     </head>
@@ -37,10 +38,13 @@
                     </form>
                 </div>
             </section>
+            <?php include 'parts/social.php' ?>
 
-            <footer class="site__footer">
+            <footer class="footer">
                 <nav class="site__nav--footer">
                     <a class="nav__item cta" href="https://wearehalo.co.uk/cookies-and-privacy/">Cookies & Privacy</a>
+
+
                 </nav>
             </footer>
         </main>

@@ -34,12 +34,12 @@ gulp.task('build-sass', function () {
       .pipe(gulp.dest(path.css_dir));
 });
 
-gulp.task('deploy-sass', function () {
-    return gulp.src(path.sass_files)
-      .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-      .pipe(autoprefixer(autoprefixerOptions))
-      .pipe(gulp.dest(path.css_dir));
-});
+// gulp.task('deploy-sass', function () {
+//     return gulp.src(path.sass_files)
+//       .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+//       .pipe(autoprefixer(autoprefixerOptions))
+//       .pipe(gulp.dest(path.css_dir));
+// });
 
 // Minify JS
 gulp.task('minify-js', function (cb) {
@@ -54,7 +54,7 @@ gulp.task('minify-js', function (cb) {
     );
 });
 
-gulp.task('build', gulp.series('deploy-sass', 'minify-js'));
+gulp.task('build', gulp.series('build-sass', 'minify-js'));
 
 gulp.task('watch', gulp.parallel(function() {
     gulp.watch(path.js_dir, gulp.series(['minify-js']));

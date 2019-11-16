@@ -1,0 +1,12 @@
+.footer {
+    position: fixed;
+    bottom  : 0.8rem;
+
+    a {
+        color: $color-black;
+
+        &:hover {
+            color: $color-pink;
+        }
+    }
+}
