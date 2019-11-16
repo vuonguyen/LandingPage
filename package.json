@@ -1,0 +1,29 @@
+{
+  "name": "vuonguyen",
+  "title": "Vuong Nguyen",
+  "homepage": "http://vee.local",
+  "author": "Vuong Nguyen",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-uglify": "^3.0.2",
+    "pump": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlackrockDigital/startbootstrap-freelancer.git"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "watch": "gulp watch ",
+    "dev": "gulp dev"
+  }
+}

@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Gilroy-Heavy';
+    src        : url("../fonts/gilroy-bold-webfont.woff2") format('woff2');
+    font-weight: normal;
+    font-style : normal;
+}
+@font-face {
+    font-family: 'Gilroy-Normal';
+    src        : url("../fonts/gilroy-medium-webfont.woff2") format('woff2');
+    font-weight: normal;
+    font-style : normal;
+}
+$font-heading: 'Gilroy-Heavy', Helvetica, Arial, sans-serif;
+$font-text: 'Gilroy-Normal', Helvetica, Arial, sans-serif;
+$font: Helvetica, Arial, sans-serif;
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font            : 1rem $font-text;
+    line-height     : 1.5;
+    color           : $color-black;
+    background-color: $color-yellow;
+}

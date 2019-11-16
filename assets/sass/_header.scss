@@ -1,0 +1,73 @@
+.header {
+    &__title {
+        font          : 2em $font-heading;
+        text-transform: uppercase;
+        @media(min-width: $medium) {
+            font-size    : 4em;
+            margin-top   : 0.3em;
+            margin-bottom: 0.3em;
+        }
+    }
+
+    &__subtitle {
+        margin-top   : 1em;
+        margin-bottom: 1em;
+        font-size    : 1.5em;
+        line-height  : 1.2;
+        @media(min-width: $medium) {
+            font-size: 2em;
+        }
+    }
+}
+
+.progress {
+    position       : relative;
+    width          : 500px;
+    max-width      : 94%;
+    margin-right   : auto;
+    margin-left    : auto;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+
+    &__bar {
+        position        : relative;
+        display         : block;
+        width           : 80%;
+        height          : 1rem;
+        margin-left     : 2%;
+        margin-right    : 2%;
+        background-color: $color-white;
+
+        &:after {
+            content                  : "";
+            position                 : absolute;
+            left                     : 0;
+            top                      : 0;
+            width                    : 0;
+            height                   : 100%;
+            background-color         : $color-pink;
+            animation-name           : progress;
+            animation-duration       : 1.5s;
+            animation-delay          : 0.5s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode      : forwards;
+        }
+    }
+}
+
+.fadeIn {
+    opacity  : 0;
+    animation: fadeIn 2s 2s forwards;
+}
+/* Keyframes */
+@keyframes progress {
+    100% {
+        width: 90%;
+    }
+}
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+    }
+}
