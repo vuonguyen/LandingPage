@@ -7,7 +7,7 @@
         <meta name="description" content="Shaping brands. Connecting audiences. By thinking louder. Seeing bigger. Being bolder. Killing the silence.">
         <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
         <title>Holding page</title>
-        <link rel="stylesheet" href="/assets/css/style.css" />
+        <link rel="stylesheet" href="/assets/css/style.css?v=1.1" />
     </head>
     <body>
         <main class="site__main">
