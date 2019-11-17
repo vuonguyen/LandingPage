@@ -1,12 +1,47 @@
 .footer {
-    position: fixed;
-    bottom  : 0.8rem;
+    position        : fixed;
+    left            : 0;
+    bottom          : 0;
+    width           : 100%;
+    padding         : 1em;
+    display         : flex;
+    align-items     : center;
+    justify-content : space-around;
+    background-color: $color-black;
 
     a {
-        color: $color-black;
+        color: $color-white;
 
         &:hover {
             color: $color-pink;
+        }
+    }
+}
+
+.social {
+    &__container {
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+
+        a {
+            display        : inline-block;
+            padding-left   : 1em;
+            text-decoration: none;
+            border         : none;
+        }
+
+        svg {
+            width : 25px;
+            height: 25px;
+        }
+
+        path {
+            fill: $color-white;
+
+            &:hover {
+                fill: $color-pink;
+            }
         }
     }
 }

@@ -1,0 +1,13 @@
+.logo {
+    display: inline-block;
+    width  : 70px;
+    @media(min-width: $medium) {
+        width: 100px;
+    }
+    // img {
+    //     position: absolute;
+    //     top: 0;
+    //     display: block;
+    //
+    // }
+}

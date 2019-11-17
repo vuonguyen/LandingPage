@@ -8,7 +8,7 @@
     &__main {
         position       : relative;
         width          : 100%;
-        height         : 100vh;
+        height         : 92vh;
         display        : flex;
         flex-direction : column;
         justify-content: center;
@@ -24,24 +24,5 @@
         padding         : 0.5em 0;
         background-color: $color-black;
         color           : $color-white;
-    }
-
-    &__social {
-        display        : flex;
-        justify-content: center;
-        align-items    : center;
-        margin-top     : 2em;
-
-        a {
-            display        : inline-block;
-            padding-left   : 1em;
-            text-decoration: none;
-            border         : none;
-        }
-
-        svg {
-            width : 30px;
-            height: 30px;
-        }
     }
 }
